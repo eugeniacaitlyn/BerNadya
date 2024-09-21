@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.ubaya.bernadya.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,12 +16,16 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnWhat.setOnClickListener{
+            val intent = Intent(this,WhatWePlayActivity::class.java)
+            startActivity(intent)
+        }
         binding.btnwho.setOnClickListener{
-            val intent = Intent(this,WhoWeAre::class.java)
+            val intent = Intent(this,WhoWeAreActivity::class.java)
             startActivity(intent)
         }
         binding.btnSchedule.setOnClickListener{
-            val intent = Intent(this,ScheduleDetail::class.java)
+            val intent = Intent(this,OurScheduleActivity::class.java)
             startActivity(intent)
         }
 
