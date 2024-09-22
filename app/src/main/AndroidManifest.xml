@@ -13,6 +13,9 @@
         android:theme="@style/Theme.BerNadya"
         tools:targetApi="31">
         <activity
+            android:name=".WhatWePlayActivity"
+            android:exported="false" />
+        <activity
             android:name=".OurScheduleDetailActivity"
             android:exported="false" />
         <activity
