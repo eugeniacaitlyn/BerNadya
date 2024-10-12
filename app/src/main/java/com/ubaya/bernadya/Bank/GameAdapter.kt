@@ -15,7 +15,6 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.QuestionViewHolder>(){
             LayoutInflater.from(parent.context),
             parent,false)
         return QuestionViewHolder(binding)
-
     }
 
     override fun getItemCount(): Int {
@@ -27,17 +26,19 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.QuestionViewHolder>(){
         holder.binding.txtNameGame.text = GameObject.games[position].nama
         holder.binding.txtDescGame.text = GameObject.games[position].desc
         holder.binding.btnAchievement.setOnClickListener{
-
-            val context = holder.itemView.context
+            val context = holder.itemView.context //??
             val intent = Intent(context, AchievementActivity::class.java)
-
 
             // Send data to the next activity
             val achievementArrayList = ArrayList(GameObject.games[position].achievement)
             intent.putParcelableArrayListExtra("achi", achievementArrayList)
             intent.putExtra("nama", GameObject.games[position].nama)
             context.startActivity(intent)
+//            val intent = Intent(holder.itemView.context, EditQuestionActivity::class.java)
+//            intent.putExtra("question_index", position)
+//            holder.itemView.context.startActivity(intent)
         }
+
         holder.binding.btnTeam.setOnClickListener {
 //            val context = holder.itemView.context
 //            val intent = Intent(context, TeamActivity::class.java)

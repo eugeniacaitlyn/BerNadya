@@ -9,38 +9,34 @@
     tools:context=".AchievementActivity">
 
   <TextView
-      android:id="@+id/textView6"
-      android:layout_width="wrap_content"
+      android:id="@+id/txtNameGame"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_marginStart="16dp"
-      android:layout_marginTop="37dp"
-      android:layout_marginEnd="307dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="32dp"
       android:fontFamily="@font/poppins_bold"
       android:text="VALORANT"
       android:textSize="16sp"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/comboBoxYear"
-      app:layout_constraintVertical_bias="0.018" />
+      app:layout_constraintTop_toBottomOf="@+id/cbYear" />
 
   <Spinner
-      android:id="@+id/comboBoxYear"
-      android:layout_width="380dp"
+      android:id="@+id/cbYear"
+      style="@android:style/Widget.Material.Light.Spinner"
+      android:layout_width="0dp"
       android:layout_height="42dp"
-      android:layout_marginStart="17dp"
-      android:layout_marginTop="50dp"
-      android:layout_marginEnd="14dp"
-      android:layout_marginBottom="335dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginEnd="32dp"
       android:backgroundTint="#032C64"
+      android:fontFamily="@font/poppins_regular"
       android:outlineProvider="bounds"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imageView6"
-      app:layout_constraintVertical_bias="0.0" />
+      app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
   <ImageView
       android:id="@+id/imageView6"
@@ -109,30 +105,31 @@
 
   <TextView
       android:id="@+id/textView2"
-      android:layout_width="wrap_content"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_marginStart="17dp"
+      android:layout_marginStart="32dp"
       android:layout_marginTop="21dp"
-      android:layout_marginEnd="362dp"
-      android:layout_marginBottom="10dp"
+      android:layout_marginEnd="32dp"
+      android:fontFamily="@font/poppins_regular"
       android:text="Year:"
-      app:layout_constraintBottom_toTopOf="@+id/comboBoxYear"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
   <TextView
       android:id="@+id/txtAchievement"
-      android:layout_width="373dp"
-      android:layout_height="220dp"
-      android:layout_marginStart="17dp"
-      android:layout_marginEnd="21dp"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginEnd="32dp"
+      android:layout_marginBottom="48dp"
+      android:fontFamily="@font/poppins_regular"
       android:text="macam macam achievement"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/textView6"
+      app:layout_constraintTop_toBottomOf="@+id/txtNameGame"
       app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

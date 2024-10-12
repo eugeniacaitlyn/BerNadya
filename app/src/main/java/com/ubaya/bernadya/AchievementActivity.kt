@@ -34,7 +34,7 @@ class AchievementActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        binding.comboBoxYear.adapter = adapter
+        binding.cbYear.adapter = adapter
 
 
 
@@ -42,7 +42,7 @@ class AchievementActivity : AppCompatActivity() {
         val gameName = intent.getStringExtra("nama")?: ""
 //        binding.txtJudulGameAchi.text = gameName
 
-        binding.comboBoxYear.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+        binding.cbYear.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 val selectedYear = parent.getItemAtPosition(position).toString()
                 if (selectedYear == "ALL") {
@@ -64,7 +64,7 @@ class AchievementActivity : AppCompatActivity() {
     private fun displayAchievements(achievements: List<AchievementClass>, gameName: String) {
 
         val stringBuilder = StringBuilder()
-        stringBuilder.append("Achievements for $gameName:\n\n")
+        stringBuilder.append("Achievements for $gameName:\n")
 
         achievements.forEachIndexed { index, achievement ->
             stringBuilder.append("${index + 1}. ${achievement.namaAchievement} \n")
