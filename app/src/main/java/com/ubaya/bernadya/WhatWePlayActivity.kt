@@ -6,6 +6,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.ubaya.bernadya.Bank.GameAdapter
 import com.ubaya.bernadya.databinding.ActivityWhatWePlayBinding
 
 class WhatWePlayActivity : AppCompatActivity() {
@@ -23,9 +25,13 @@ class WhatWePlayActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.btnAchievement.setOnClickListener{
-            val intent = Intent(this,AchievementActivity::class.java)
-            startActivity(intent)
-        }
+        binding.recGame.layoutManager = LinearLayoutManager(this)
+        binding.recGame.setHasFixedSize(true)
+        binding.recGame.adapter = GameAdapter()
+
+//        binding.btnAchievement.setOnClickListener{
+//            val intent = Intent(this,AchievementActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 }
