@@ -106,7 +106,109 @@ object GameObject {
                 )
             )
         ),
+        GameClass(
+            id = 4,
+            nama = "League of Legends",
+            desc = "League of Legends (LoL) is a fast-paced multiplayer online battle arena (MOBA) game where players control unique champions and compete in teams of five to destroy the enemy’s Nexus. It combines strategy, teamwork, and quick reflexes, making it a staple in the competitive gaming scene.",
+            gambar = R.drawable.valorant_image,
+            achievement = listOf(
+                AchievementClass("Juara 1 World Championship", 2022),
+                AchievementClass("Juara 2 MSI", 2023),
+                AchievementClass("Juara 1 LCK Summer", 2023),
+                AchievementClass("Juara 3 World Championship", 2024)
+            ),
+            team = listOf(
+                TeamClass(
+                    namaTeam = "T1",
+                    namaMember = listOf(
+                        MemberClass("Faker", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Zeus", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Oner", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Gumayusi", "https://i.pravatar.cc/300?img=18"),
+                        MemberClass("Keria", "https://i.pravatar.cc/300?img=12")
+                    )
+                ),
+                TeamClass(
+                    namaTeam = "G2 Esports",
+                    namaMember = listOf(
+                        MemberClass("Caps", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Jankos", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("BrokenBlade", "https://i.pravatar.cc/300?img=12"),
+                        MemberClass("Flakked", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Targamas", "https://i.pravatar.cc/300?img=18")
+                    )
+                )
+            )
+        ),
+        GameClass(
+            id = 5,
+            nama = "Call of Duty",
+            desc = "Call of Duty (COD) is a first-person shooter that emphasizes fast-paced, action-packed gameplay. Known for its intense multiplayer modes and realistic graphics, COD has been a dominant force in the FPS genre with various game modes and large-scale battles.",
+            gambar = R.drawable.valorant_image,
+            achievement = listOf(
+                AchievementClass("Juara 1 COD World League", 2023),
+                AchievementClass("Juara 2 COD Mobile World Championship", 2023),
+                AchievementClass("Juara 1 CDL Championship", 2022),
+                AchievementClass("Juara 3 COD Championship", 2024)
+            ),
+            team = listOf(
+                TeamClass(
+                    namaTeam = "OpTic Gaming",
+                    namaMember = listOf(
+                        MemberClass("Scump", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Dashy", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("iLLeY", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Shotzzy", "https://i.pravatar.cc/300?img=18"),
+                        MemberClass("Ghosty", "https://i.pravatar.cc/300?img=12")
+                    )
+                ),
+                TeamClass(
+                    namaTeam = "FaZe Clan",
+                    namaMember = listOf(
+                        MemberClass("aBeZy", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Simp", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Cellium", "https://i.pravatar.cc/300?img=12"),
+                        MemberClass("Arcitys", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Prestinni", "https://i.pravatar.cc/300?img=18")
+                    )
+                )
+            )
+        ),
+        GameClass(
+            id = 6,
+            nama = "Fortnite",
+            desc = "Fortnite is a battle royale game where players compete to be the last person standing on an island. With its unique building mechanics, vibrant graphics, and frequent in-game events, Fortnite has become a cultural phenomenon and a top choice in competitive gaming.",
+            gambar = R.drawable.valorant_image,
+            achievement = listOf(
+                AchievementClass("Juara 1 Fortnite World Cup", 2022),
+                AchievementClass("Juara 2 FNCS Grand Royale", 2023),
+                AchievementClass("Juara 3 Fortnite Championship Series", 2022),
+                AchievementClass("Juara 1 FNCS Invitational", 2024)
+            ),
+            team = listOf(
+                TeamClass(
+                    namaTeam = "Team Liquid Fortnite",
+                    namaMember = listOf(
+                        MemberClass("Benjyfishy", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Mongraal", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Mitro", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Aqua", "https://i.pravatar.cc/300?img=18"),
+                        MemberClass("Wolfiez", "https://i.pravatar.cc/300?img=12")
+                    )
+                ),
+                TeamClass(
+                    namaTeam = "NRG Fortnite",
+                    namaMember = listOf(
+                        MemberClass("Clix", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("UnknownxArmy", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Zayt", "https://i.pravatar.cc/300?img=12"),
+                        MemberClass("Dubs", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Saf", "https://i.pravatar.cc/300?img=18")
+                    )
+                )
+            )
+        )
 
-        //tinggal tambah lagi klo mau ditambahin, tinggal tambah koma setelah tutup kurung di atas ini
+                    //tinggal tambah lagi klo mau ditambahin, tinggal tambah koma setelah tutup kurung di atas ini
     )
 }
