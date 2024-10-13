@@ -4,6 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.ubaya.bernadya.Bank.GameAdapter
+import com.ubaya.bernadya.Bank.ScheduleAdapter
 import com.ubaya.bernadya.databinding.ActivitySceduleBinding
 
 class OurScheduleActivity : AppCompatActivity() {
@@ -24,5 +27,8 @@ class OurScheduleActivity : AppCompatActivity() {
             val intent = Intent(this,OurScheduleDetailActivity::class.java)
             startActivity(intent)
         }
+        binding.lvSchedule.layoutManager = LinearLayoutManager(this)
+        binding.lvSchedule.setHasFixedSize(true)
+        binding.lvSchedule.adapter = ScheduleAdapter()
     }
 }

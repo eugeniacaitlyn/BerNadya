@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
@@ -26,11 +26,11 @@
 
             <ImageView
                 android:id="@+id/imgGame"
-                tools:srcCompat="@drawable/valorant_image"
                 android:layout_width="wrap_content"
                 android:layout_height="125dp"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/valorant_image" />
+                app:srcCompat="@drawable/valorant_image"
+                tools:srcCompat="@drawable/valorant_image" />
 
             <TextView
                 android:id="@+id/txtNameGame"
