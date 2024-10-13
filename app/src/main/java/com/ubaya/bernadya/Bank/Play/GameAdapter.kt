@@ -1,4 +1,4 @@
-package com.ubaya.bernadya.Bank
+package com.ubaya.bernadya.Bank.Play
 
 import android.content.Intent
 import android.view.LayoutInflater

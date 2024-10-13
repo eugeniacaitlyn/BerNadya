@@ -1,4 +1,4 @@
-package com.ubaya.bernadya.Bank
+package com.ubaya.bernadya.Bank.Play
 
 import android.os.Parcel
 import android.os.Parcelable
@@ -7,7 +7,7 @@ data class TeamClass(val namaTeam: String,
                      val namaMember: List<MemberClass>): Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString() ?: "",
-        parcel.createTypedArrayList(MemberClass.CREATOR) ?: listOf()
+        parcel.createTypedArrayList(MemberClass) ?: listOf()
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {

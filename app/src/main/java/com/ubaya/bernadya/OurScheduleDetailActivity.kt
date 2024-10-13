@@ -22,10 +22,23 @@ class OurScheduleDetailActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.txtNameSchedule.text = "Regional Qualifier - Valorant"
-        binding.txtPlace.text = "Los Angeles, CA (10.00 AM)"
-        binding.txtTeam.text = "TEAM A"
-        binding.txtDescSchedule.text = "This tournament is an intense competition where top teams from various regions battle it out for a chance to advance to the main tournament. This stage serves as a proving ground for both established and up-and-coming teams, as they showcase their skills, strategies, and teamwork in one of the most competitive environments. With high stakes on the line, the qualifier will determine which teams are truly ready to compete at the highest level, providing a thrilling experience for both players and fans alike."
+//        intent.putExtra("event", ScheduleObject.schedule[position].event)
+//        intent.putExtra("team", ScheduleObject.schedule[position].teamGame)
+//        intent.putExtra("lokasi", ScheduleObject.schedule[position].location)
+//        intent.putExtra("desc", GameObject.games[position].desc)
+
+        //ambil data
+        val eventName = intent.getStringExtra("event")?: ""
+        val gameTeam = intent.getStringExtra("team")?: ""
+        val location = intent.getStringExtra("lokasi")?: ""
+        val desckripsi = intent.getStringExtra("desc")?: ""
+
+
+        //menampilkan
+        binding.txtNameSchedule.setText(eventName)
+        binding.txtPlace.setText(location)
+        binding.txtTeam.setText(gameTeam)
+        binding.txtDescSchedule.setText(desckripsi)
 
         binding.btnNotif.setOnClickListener {
             Toast.makeText(this, "Notification created", Toast.LENGTH_SHORT).show()

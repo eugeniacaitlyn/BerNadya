@@ -1,4 +1,4 @@
-package com.ubaya.bernadya.Bank
+package com.ubaya.bernadya.Bank.Play
 
 data class GameClass(val id: Int,
                      val nama: String,

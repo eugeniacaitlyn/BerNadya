@@ -1,4 +1,4 @@
-package com.ubaya.bernadya.Bank
+package com.ubaya.bernadya.Bank.Play
 
 import com.ubaya.bernadya.R
 
@@ -110,7 +110,7 @@ object GameObject {
             id = 4,
             nama = "League of Legends",
             desc = "League of Legends (LoL) is a fast-paced multiplayer online battle arena (MOBA) game where players control unique champions and compete in teams of five to destroy the enemy’s Nexus. It combines strategy, teamwork, and quick reflexes, making it a staple in the competitive gaming scene.",
-            gambar = R.drawable.valorant_image,
+            gambar = R.drawable.lol_image,
             achievement = listOf(
                 AchievementClass("Juara 1 World Championship", 2022),
                 AchievementClass("Juara 2 MSI", 2023),
@@ -144,7 +144,7 @@ object GameObject {
             id = 5,
             nama = "Call of Duty",
             desc = "Call of Duty (COD) is a first-person shooter that emphasizes fast-paced, action-packed gameplay. Known for its intense multiplayer modes and realistic graphics, COD has been a dominant force in the FPS genre with various game modes and large-scale battles.",
-            gambar = R.drawable.valorant_image,
+            gambar = R.drawable.cod_image,
             achievement = listOf(
                 AchievementClass("Juara 1 COD World League", 2023),
                 AchievementClass("Juara 2 COD Mobile World Championship", 2023),
@@ -178,7 +178,7 @@ object GameObject {
             id = 6,
             nama = "Fortnite",
             desc = "Fortnite is a battle royale game where players compete to be the last person standing on an island. With its unique building mechanics, vibrant graphics, and frequent in-game events, Fortnite has become a cultural phenomenon and a top choice in competitive gaming.",
-            gambar = R.drawable.valorant_image,
+            gambar = R.drawable.fortnite_image,
             achievement = listOf(
                 AchievementClass("Juara 1 Fortnite World Cup", 2022),
                 AchievementClass("Juara 2 FNCS Grand Royale", 2023),
