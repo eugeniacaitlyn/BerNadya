@@ -22,18 +22,20 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.QuestionViewHolder>(){
     }
 
     override fun onBindViewHolder(holder: QuestionViewHolder, position: Int) {
-        holder.binding.valorantimage.setImageResource(GameObject.games[position].gambar)
+        holder.binding.imgGame.setImageResource(GameObject.games[position].gambar)
         holder.binding.txtNameGame.text = GameObject.games[position].nama
         holder.binding.txtDescGame.text = GameObject.games[position].desc
         holder.binding.btnAchievement.setOnClickListener{
             val context = holder.itemView.context //??
             val intent = Intent(context, AchievementActivity::class.java)
 
-            // Send data to the next activity
+            // mindah data ke achievement activity
             val achievementArrayList = ArrayList(GameObject.games[position].achievement)
             intent.putParcelableArrayListExtra("achi", achievementArrayList)
             intent.putExtra("nama", GameObject.games[position].nama)
+            intent.putExtra("gambar", GameObject.games[position].gambar)
             context.startActivity(intent)
+
 //            val intent = Intent(holder.itemView.context, EditQuestionActivity::class.java)
 //            intent.putExtra("question_index", position)
 //            holder.itemView.context.startActivity(intent)

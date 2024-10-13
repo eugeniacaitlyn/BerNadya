@@ -2,6 +2,7 @@ package com.ubaya.bernadya
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -37,10 +38,13 @@ class AchievementActivity : AppCompatActivity() {
         binding.cbYear.adapter = adapter
 
 
-
+        //ambil data
         val achievements = intent.getParcelableArrayListExtra<AchievementClass>("achi")?: ArrayList()
         val gameName = intent.getStringExtra("nama")?: ""
-//        binding.txtJudulGameAchi.text = gameName
+        val gambarGame = intent.getIntExtra("gambar", 0)
+        binding.txtNameGame.setText(gameName)
+        binding.imgGame.setImageResource(gambarGame)
+
 
         binding.cbYear.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
@@ -62,6 +66,8 @@ class AchievementActivity : AppCompatActivity() {
 
     }
     private fun displayAchievements(achievements: List<AchievementClass>, gameName: String) {
+        val index = intent.getIntExtra("question_index", 0)
+
 
         val stringBuilder = StringBuilder()
         stringBuilder.append("Achievements for $gameName:\n")

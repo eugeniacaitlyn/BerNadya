@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
@@ -25,33 +25,53 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imgGame"
-                tools:srcCompat="@drawable/valorant_image"
+                android:id="@+id/valorantimage"
                 android:layout_width="wrap_content"
                 android:layout_height="125dp"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/valorant_image" />
+                app:srcCompat="@drawable/valorant_image"
+                tools:srcCompat="@drawable/valorant_image" />
 
             <TextView
-                android:id="@+id/txtNameGame"
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="24dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="tanggalnya"
+                android:textColor="#525252" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/design_default_color_primary"
+                />
+
+            <TextView
+                android:id="@+id/txtEvent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginEnd="24dp"
                 android:fontFamily="@font/poppins_bold"
                 android:text="VALORANT"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/txtDescGame"
+                android:id="@+id/txtTeam"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="24dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="VALORANT is a tactical first-person shooter from Riot Games that combines precise gunplay with unique character abilities. Players engage in strategic, team-based matches where that must complete objectives and outsmart opponents to win."
+                android:text="nama TEAM nya"
                 android:textColor="#525252" />
 
             <LinearLayout
@@ -62,7 +82,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnAchievement"
+                    android:id="@+id/btnScheduleDetail"
                     style="@style/Widget.Material3.Button.OutlinedButton.Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -70,24 +90,7 @@
                     android:layout_marginEnd="24dp"
                     android:layout_marginBottom="32dp"
                     android:backgroundTint="#00043170"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="Achievement"
-                    android:textAlignment="center"
-                    android:textColor="#043170"
-                    android:textColorLink="#032049"
-                    app:iconTint="#043170"
-                    app:strokeColor="#043170" />
-
-                <Button
-                    android:id="@+id/btnTeam"
-                    style="@style/Widget.Material3.Button.OutlinedButton.Icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginEnd="24dp"
-                    android:layout_marginBottom="32dp"
-                    android:backgroundTint="#00043170"
-                    android:text="Team"
+                    android:text="See Detail"
                     android:textAlignment="center"
                     android:textColor="#043170"
                     android:textColorLink="#032049"
