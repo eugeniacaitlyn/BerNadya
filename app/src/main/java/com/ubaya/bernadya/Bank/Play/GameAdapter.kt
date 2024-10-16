@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ubaya.bernadya.AchievementActivity
+import com.ubaya.bernadya.Bank.Team.SelectedGameMember
+import com.ubaya.bernadya.TeamActivity
 import com.ubaya.bernadya.databinding.GameListBinding
 
 class GameAdapter : RecyclerView.Adapter<GameAdapter.QuestionViewHolder>(){
@@ -42,15 +44,15 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.QuestionViewHolder>(){
         }
 
         holder.binding.btnTeam.setOnClickListener {
-//            val context = holder.itemView.context
-//            val intent = Intent(context, TeamActivity::class.java)
-//
-//            val teamArrayList = ArrayList(GameData.games[position].team)
-//            intent.putParcelableArrayListExtra("team", teamArrayList)
-//            intent.putExtra("nama", GameData.games[position].nama)
-//            SelectedGameMember.teams = teamArrayList
-//
-//            context.startActivity(intent)
+            val context = holder.itemView.context
+            val intent = Intent(context, TeamActivity::class.java)
+
+            val teamArrayList = ArrayList(GameObject.games[position].team)
+            intent.putParcelableArrayListExtra("team", teamArrayList)
+            intent.putExtra("nama", GameObject.games[position].nama)
+            SelectedGameMember.teams = teamArrayList
+
+            context.startActivity(intent)
         }
     }
 
