@@ -208,7 +208,6 @@ object GameObject {
                 )
             )
         )
-
-                    //tinggal tambah lagi klo mau ditambahin, tinggal tambah koma setelah tutup kurung di atas ini
+        //tinggal tambah lagi klo mau ditambahin, tinggal tambah koma setelah tutup kurung di atas ini
     )
 }
