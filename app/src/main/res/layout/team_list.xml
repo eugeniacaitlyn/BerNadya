@@ -60,7 +60,6 @@
                 android:fontFamily="@font/poppins_bold"
                 android:gravity="center_vertical"
                 android:text="nama tim"
-                android:textAlignment="textStart"
                 android:textSize="16dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"

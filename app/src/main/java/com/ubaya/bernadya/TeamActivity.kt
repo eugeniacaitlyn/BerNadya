@@ -28,5 +28,8 @@ class TeamActivity : AppCompatActivity() {
         val gameName = intent.getStringExtra("nama")?: ""
         val gambarGame = intent.getIntExtra("gambar", 0)
         binding.imgGame3.setImageResource(gambarGame)
+
+        var gamesmember = "$gameName's team"
+        binding.txtNameGame.setText(gamesmember)
     }
 }

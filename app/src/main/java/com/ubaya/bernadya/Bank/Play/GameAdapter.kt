@@ -48,7 +48,7 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.QuestionViewHolder>(){
             intent.putParcelableArrayListExtra("team", teamArrayList)
             intent.putExtra("nama", GameObject.games[position].nama)
             intent.putExtra("gambar", GameObject.games[position].gambar)
-            //SelectedGameMember.teams = teamArrayList
+            SelectedGameMember.teams = teamArrayList
             context.startActivity(intent)
         }
     }
