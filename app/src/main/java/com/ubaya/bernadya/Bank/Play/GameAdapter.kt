@@ -37,21 +37,18 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.QuestionViewHolder>(){
             intent.putExtra("nama", GameObject.games[position].nama)
             intent.putExtra("gambar", GameObject.games[position].gambar)
             context.startActivity(intent)
-
-//            val intent = Intent(holder.itemView.context, EditQuestionActivity::class.java)
-//            intent.putExtra("question_index", position)
-//            holder.itemView.context.startActivity(intent)
         }
 
         holder.binding.btnTeam.setOnClickListener {
             val context = holder.itemView.context
             val intent = Intent(context, TeamActivity::class.java)
 
+            //mindah data ke team activity
             val teamArrayList = ArrayList(GameObject.games[position].team)
             intent.putParcelableArrayListExtra("team", teamArrayList)
             intent.putExtra("nama", GameObject.games[position].nama)
-            SelectedGameMember.teams = teamArrayList
-
+            intent.putExtra("gambar", GameObject.games[position].gambar)
+            //SelectedGameMember.teams = teamArrayList
             context.startActivity(intent)
         }
     }

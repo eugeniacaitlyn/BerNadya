@@ -28,6 +28,9 @@
             android:name=".OurScheduleActivity"
             android:exported="false" />
         <activity
+            android:name=".TeamActivity"
+            android:exported="false" />
+        <activity
             android:name=".WhoWeAreActivity"
             android:exported="false" />
         <activity

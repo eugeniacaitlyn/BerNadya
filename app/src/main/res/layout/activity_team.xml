@@ -5,16 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imgGame3"
-        android:layout_width="wrap_content"
-        android:layout_height="232dp"
-        android:scaleType="fitXY"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/valorant" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgGame3"
+                android:layout_width="wrap_content"
+                android:layout_height="232dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/valorant" />
+
+            <TextView
+                android:id="@+id/txtNameGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Team's member"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
 
     <ImageView
         android:id="@+id/imageView"
@@ -69,17 +98,5 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/baseline_home_24"
         app:tint="#FFFFFF" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:layout_height="425dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgGame3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

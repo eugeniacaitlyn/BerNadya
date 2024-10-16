@@ -26,14 +26,14 @@
 
             <ImageView
                 android:id="@+id/imgGame"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/valorant_image"
                 tools:srcCompat="@drawable/valorant_image" />
 
             <TextView
-                android:id="@+id/txtNameGame"
+                android:id="@+id/txtNameTeam"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -42,6 +42,7 @@
                 android:fontFamily="@font/poppins_bold"
                 android:text="VALORANT"
                 android:textSize="16sp" />
+
 
             <TextView
                 android:id="@+id/txtDescGame"
@@ -71,6 +72,8 @@
                     android:layout_marginBottom="32dp"
                     android:backgroundTint="#00043170"
                     android:gravity="center_horizontal|center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
                     android:text="Achievement"
                     android:textAlignment="center"
                     android:textColor="#043170"
@@ -87,6 +90,8 @@
                     android:layout_marginEnd="24dp"
                     android:layout_marginBottom="32dp"
                     android:backgroundTint="#00043170"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
                     android:text="Team"
                     android:textAlignment="center"
                     android:textColor="#043170"
