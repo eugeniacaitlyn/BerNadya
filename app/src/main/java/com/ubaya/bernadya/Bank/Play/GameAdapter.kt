@@ -1,6 +1,7 @@
 package com.ubaya.bernadya.Bank.Play
 
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -48,7 +49,6 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.QuestionViewHolder>(){
             intent.putParcelableArrayListExtra("team", teamArrayList)
             intent.putExtra("nama", GameObject.games[position].nama)
             intent.putExtra("gambar", GameObject.games[position].gambar)
-            SelectedGameMember.teams = teamArrayList
             context.startActivity(intent)
         }
     }
