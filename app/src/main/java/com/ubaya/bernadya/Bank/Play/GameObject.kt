@@ -13,28 +13,30 @@ object GameObject {
                 AchievementClass("Juara 1 Valorant Championship Indonesia", 2023),
                 AchievementClass("Juara 3 VCT International", 2023),
                 AchievementClass("Juara 2 VCT Sea", 2022),
-                AchievementClass("Juara 1 Valorant Tournament", 2024)
+                AchievementClass("Juara 1 Valorant Tournament", 2024),
             ),
             team = listOf(
                 TeamClass(
                     namaTeam = "Bigetron VALORANT",
-                    namaMember = listOf(
-                        MemberClass("Member 1", "https://i.pravatar.cc/300?img=15"),
-                        MemberClass("Member 2", "https://i.pravatar.cc/300?img=59"),
-                        MemberClass("Member 3", "https://i.pravatar.cc/300?img=58"),
-                        MemberClass("Member 4", "https://i.pravatar.cc/300?img=18"),
-                        MemberClass("Member 5", "https://i.pravatar.cc/300?img=12")
-                    )
+                    memberList  = listOf(
+                        MemberClass("Member 1", "Duelist", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Member 2", "Controller", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Member 3", "Initiator","https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Member 4", "Sentinel", "https://i.pravatar.cc/300?img=18"),
+                        MemberClass("Member 5", "Duelist", "https://i.pravatar.cc/300?img=12")
+                    ),
+                    imgTeam = "https://seeklogo.com/images/B/bigetron-logo-F1A80FAD14-seeklogo.com.png"
                 ),
                 TeamClass(
                     namaTeam = "EVOS VALORANT",
-                    namaMember = listOf(
-                        MemberClass("Member 1", "https://i.pravatar.cc/300?img=59"),
-                        MemberClass("Member 2", "https://i.pravatar.cc/300?img=15"),
-                        MemberClass("Member 3", "https://i.pravatar.cc/300?img=12"),
-                        MemberClass("Member 4", "https://i.pravatar.cc/300?img=58"),
-                        MemberClass("Member 5", "https://i.pravatar.cc/300?img=18")
-                    )
+                    memberList  = listOf(
+                        MemberClass("Member 1", "Controller", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Member 2", "Sentinel", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Member 3", "Duelist", "https://i.pravatar.cc/300?img=12"),
+                        MemberClass("Member 4", "Duelist", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Member 5", "Initiator", "https://i.pravatar.cc/300?img=18")
+                    ),
+                    imgTeam = "https://id-mdl.com/uploads/Logo%20Team/evos-esports-500.png"
                 )
             )
         ),
@@ -52,23 +54,25 @@ object GameObject {
             team = listOf(
                 TeamClass(
                     namaTeam = "Bigetron MLBB",
-                    namaMember = listOf(
-                        MemberClass("Member 1", "https://i.pravatar.cc/300?img=15"),
-                        MemberClass("Member 2", "https://i.pravatar.cc/300?img=59"),
-                        MemberClass("Member 3", "https://i.pravatar.cc/300?img=58"),
-                        MemberClass("Member 4", "https://i.pravatar.cc/300?img=18"),
-                        MemberClass("Member 5", "https://i.pravatar.cc/300?img=12")
-                    )
+                    memberList  = listOf(
+                        MemberClass("Member 1", "Support", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Member 2", "Fighter", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Member 3", "Marksman", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Member 4", "Tanker", "https://i.pravatar.cc/300?img=18"),
+                        MemberClass("Member 5", "Mage", "https://i.pravatar.cc/300?img=12")
+                    ),
+                    imgTeam = "https://seeklogo.com/images/B/bigetron-logo-F1A80FAD14-seeklogo.com.png"
                 ),
                 TeamClass(
                     namaTeam = "EVOS MLBB",
-                    namaMember = listOf(
-                        MemberClass("Member 1", "https://i.pravatar.cc/300?img=59"),
-                        MemberClass("Member 2", "https://i.pravatar.cc/300?img=15"),
-                        MemberClass("Member 3", "https://i.pravatar.cc/300?img=12"),
-                        MemberClass("Member 4", "https://i.pravatar.cc/300?img=58"),
-                        MemberClass("Member 5", "https://i.pravatar.cc/300?img=18")
-                    )
+                    memberList  = listOf(
+                        MemberClass("Member 1", "Support", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Member 2", "Mage", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Member 3", "Tanker", "https://i.pravatar.cc/300?img=12"),
+                        MemberClass("Member 4", "Marksman", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Member 5", "Assassin", "https://i.pravatar.cc/300?img=18")
+                    ),
+                    imgTeam = "https://id-mdl.com/uploads/Logo%20Team/evos-esports-500.png"
                 )
             )
         ),
@@ -86,23 +90,25 @@ object GameObject {
             team = listOf(
                 TeamClass(
                     namaTeam = "Bigetron DOTA 2",
-                    namaMember = listOf(
-                        MemberClass("Member 1", "https://i.pravatar.cc/300?img=15"),
-                        MemberClass("Member 2", "https://i.pravatar.cc/300?img=59"),
-                        MemberClass("Member 3", "https://i.pravatar.cc/300?img=58"),
-                        MemberClass("Member 4", "https://i.pravatar.cc/300?img=18"),
-                        MemberClass("Member 5", "https://i.pravatar.cc/300?img=12")
-                    )
+                    memberList  = listOf(
+                        MemberClass("Member 1", "Hard Carry", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Member 2", "Midlaner", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Member 3", "Offlaner", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Member 4", "Soft Support", "https://i.pravatar.cc/300?img=18"),
+                        MemberClass("Member 5", "Hard Support", "https://i.pravatar.cc/300?img=12")
+                    ),
+                    imgTeam = "https://seeklogo.com/images/B/bigetron-logo-F1A80FAD14-seeklogo.com.png"
                 ),
                 TeamClass(
                     namaTeam = "EVOS DOTA 2",
-                    namaMember = listOf(
-                        MemberClass("Member 1", "https://i.pravatar.cc/300?img=59"),
-                        MemberClass("Member 2", "https://i.pravatar.cc/300?img=15"),
-                        MemberClass("Member 3", "https://i.pravatar.cc/300?img=12"),
-                        MemberClass("Member 4", "https://i.pravatar.cc/300?img=58"),
-                        MemberClass("Member 5", "https://i.pravatar.cc/300?img=18")
-                    )
+                    memberList  = listOf(
+                        MemberClass("Member 1", "Hard Support", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Member 2", "Offlaner", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Member 3", "Soft Support", "https://i.pravatar.cc/300?img=12"),
+                        MemberClass("Member 4", "Midlaner", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Member 5", "Hard Carry", "https://i.pravatar.cc/300?img=18")
+                    ),
+                    imgTeam = "https://id-mdl.com/uploads/Logo%20Team/evos-esports-500.png"
                 )
             )
         ),
@@ -120,23 +126,25 @@ object GameObject {
             team = listOf(
                 TeamClass(
                     namaTeam = "T1",
-                    namaMember = listOf(
-                        MemberClass("Faker", "https://i.pravatar.cc/300?img=15"),
-                        MemberClass("Zeus", "https://i.pravatar.cc/300?img=59"),
-                        MemberClass("Oner", "https://i.pravatar.cc/300?img=58"),
-                        MemberClass("Gumayusi", "https://i.pravatar.cc/300?img=18"),
-                        MemberClass("Keria", "https://i.pravatar.cc/300?img=12")
-                    )
+                    memberList  = listOf(
+                        MemberClass("Faker", "Top Lane", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Zeus", "Mid Lane", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Oner", "Attack Damage Carry", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Gumayusi", "Jungler", "https://i.pravatar.cc/300?img=18"),
+                        MemberClass("Keria", "Support", "https://i.pravatar.cc/300?img=12")
+                    ),
+                    imgTeam = "https://static.wikia.nocookie.net/fifa_esports_gamepedia_en/images/a/a2/T1logo_square.png/revision/latest?cb=20201205050647"
                 ),
                 TeamClass(
                     namaTeam = "G2 Esports",
-                    namaMember = listOf(
-                        MemberClass("Caps", "https://i.pravatar.cc/300?img=59"),
-                        MemberClass("Jankos", "https://i.pravatar.cc/300?img=15"),
-                        MemberClass("BrokenBlade", "https://i.pravatar.cc/300?img=12"),
-                        MemberClass("Flakked", "https://i.pravatar.cc/300?img=58"),
-                        MemberClass("Targamas", "https://i.pravatar.cc/300?img=18")
-                    )
+                    memberList  = listOf(
+                        MemberClass("Caps", "Attack Damage Carry", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Jankos", "Top Lane", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("BrokenBlade", "Support", "https://i.pravatar.cc/300?img=12"),
+                        MemberClass("Flakked", "Jungler", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Targamas", "Mid Lane", "https://i.pravatar.cc/300?img=18")
+                    ),
+                    imgTeam = "https://g2esports.com/cdn/shop/files/G2-Esports-2020-Logo_87bf0678-e67f-4834-8b09-e56137ffaa80.png?v=1641913940"
                 )
             )
         ),
@@ -154,23 +162,25 @@ object GameObject {
             team = listOf(
                 TeamClass(
                     namaTeam = "OpTic Gaming",
-                    namaMember = listOf(
-                        MemberClass("Scump", "https://i.pravatar.cc/300?img=15"),
-                        MemberClass("Dashy", "https://i.pravatar.cc/300?img=59"),
-                        MemberClass("iLLeY", "https://i.pravatar.cc/300?img=58"),
-                        MemberClass("Shotzzy", "https://i.pravatar.cc/300?img=18"),
-                        MemberClass("Ghosty", "https://i.pravatar.cc/300?img=12")
-                    )
+                    memberList  = listOf(
+                        MemberClass("Scump", "Objective", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Dashy", "Slayer", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("iLLeY", "Anchor", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Shotzzy", "Support", "https://i.pravatar.cc/300?img=18"),
+                        MemberClass("Ghosty", "Slayer", "https://i.pravatar.cc/300?img=12")
+                    ),
+                    imgTeam = "https://liquipedia.net/commons/images/thumb/7/79/OpTic_Gaming_lightmode.png/600px-OpTic_Gaming_lightmode.png"
                 ),
                 TeamClass(
                     namaTeam = "FaZe Clan",
-                    namaMember = listOf(
-                        MemberClass("aBeZy", "https://i.pravatar.cc/300?img=59"),
-                        MemberClass("Simp", "https://i.pravatar.cc/300?img=15"),
-                        MemberClass("Cellium", "https://i.pravatar.cc/300?img=12"),
-                        MemberClass("Arcitys", "https://i.pravatar.cc/300?img=58"),
-                        MemberClass("Prestinni", "https://i.pravatar.cc/300?img=18")
-                    )
+                    memberList  = listOf(
+                        MemberClass("aBeZy", "Slayer", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Simp", "Support", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Cellium", "Anchor", "https://i.pravatar.cc/300?img=12"),
+                        MemberClass("Arcitys", "Objective", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Prestinni", "Support", "https://i.pravatar.cc/300?img=18")
+                    ),
+                    imgTeam = "https://upload.wikimedia.org/wikipedia/commons/4/4d/Faze_Clan.svg"
                 )
             )
         ),
@@ -188,23 +198,23 @@ object GameObject {
             team = listOf(
                 TeamClass(
                     namaTeam = "Team Liquid Fortnite",
-                    namaMember = listOf(
-                        MemberClass("Benjyfishy", "https://i.pravatar.cc/300?img=15"),
-                        MemberClass("Mongraal", "https://i.pravatar.cc/300?img=59"),
-                        MemberClass("Mitro", "https://i.pravatar.cc/300?img=58"),
-                        MemberClass("Aqua", "https://i.pravatar.cc/300?img=18"),
-                        MemberClass("Wolfiez", "https://i.pravatar.cc/300?img=12")
-                    )
+                    memberList  = listOf(
+                        MemberClass("Benjyfishy", "IGL", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Mongraal", "Fragger", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("Support", "Support", "https://i.pravatar.cc/300?img=58"),
+                        MemberClass("Aqua", "Fragger", "https://i.pravatar.cc/300?img=18"),
+                    ),
+                    imgTeam = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3sneb3hm1P52NYZHZVadeGv7K9IKQg6UQjw&s"
                 ),
                 TeamClass(
                     namaTeam = "NRG Fortnite",
-                    namaMember = listOf(
-                        MemberClass("Clix", "https://i.pravatar.cc/300?img=59"),
-                        MemberClass("UnknownxArmy", "https://i.pravatar.cc/300?img=15"),
-                        MemberClass("Zayt", "https://i.pravatar.cc/300?img=12"),
-                        MemberClass("Dubs", "https://i.pravatar.cc/300?img=58"),
-                        MemberClass("Saf", "https://i.pravatar.cc/300?img=18")
-                    )
+                    memberList  = listOf(
+                        MemberClass("Clix", "IGL", "https://i.pravatar.cc/300?img=59"),
+                        MemberClass("UnknownxArmy", "Fragger", "https://i.pravatar.cc/300?img=15"),
+                        MemberClass("Zayt", "Support", "https://i.pravatar.cc/300?img=12"),
+                        MemberClass("Dubs", "Support", "https://i.pravatar.cc/300?img=58"),
+                    ),
+                    imgTeam = "https://upload.wikimedia.org/wikipedia/commons/b/b7/NRG_Esports_logo.svg"
                 )
             )
         )

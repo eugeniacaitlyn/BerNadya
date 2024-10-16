@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.ubaya.bernadya.Bank.Play.GameObject
 import com.ubaya.bernadya.OurScheduleDetailActivity
 import com.ubaya.bernadya.databinding.SchedulesListBinding
 import java.text.SimpleDateFormat
@@ -30,7 +31,7 @@ class ScheduleAdapter() : RecyclerView.Adapter<ScheduleAdapter.ScheduleViewHolde
         holder.binding.txtTeam.text = ScheduleObject.schedule[position].teamGame.namaTeam
         holder.binding.txtEvent.text = ScheduleObject.schedule[position].event
         holder.binding.btnScheduleDetail.setOnClickListener{
-            val context = holder.itemView.context //??
+            val context = holder.itemView.context
             val intent = Intent(context, OurScheduleDetailActivity::class.java)
 
             // mindah data ke schedule detail activity
@@ -38,6 +39,7 @@ class ScheduleAdapter() : RecyclerView.Adapter<ScheduleAdapter.ScheduleViewHolde
             intent.putExtra("team", ScheduleObject.schedule[position].teamGame.namaTeam)
             intent.putExtra("lokasi", ScheduleObject.schedule[position].location)
             intent.putExtra("desc", ScheduleObject.schedule[position].desc)
+            intent.putExtra("gambar", ScheduleObject.schedule[position].gambarArena)
             context.startActivity(intent)
         }
     }

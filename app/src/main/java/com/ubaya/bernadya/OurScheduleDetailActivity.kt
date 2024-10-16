@@ -32,6 +32,7 @@ class OurScheduleDetailActivity : AppCompatActivity() {
         val gameTeam = intent.getStringExtra("team")?: ""
         val location = intent.getStringExtra("lokasi")?: ""
         val desckripsi = intent.getStringExtra("desc")?: ""
+        val gambarArena = intent.getIntExtra("gambar", 0)
 
 
         //menampilkan
@@ -39,6 +40,7 @@ class OurScheduleDetailActivity : AppCompatActivity() {
         binding.txtPlace.setText(location)
         binding.txtTeam.setText(gameTeam)
         binding.txtDescSchedule.setText(desckripsi)
+        binding.imgArena.setImageResource(gambarArena)
 
         binding.btnNotif.setOnClickListener {
             Toast.makeText(this, "Notification created", Toast.LENGTH_SHORT).show()
