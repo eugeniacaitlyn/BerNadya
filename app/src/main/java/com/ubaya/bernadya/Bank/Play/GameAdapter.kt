@@ -28,8 +28,9 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.QuestionViewHolder>(){
         holder.binding.imgGame.setImageResource(GameObject.games[position].gambar)
         holder.binding.txtNameGame.text = GameObject.games[position].nama
         holder.binding.txtDescGame.text = GameObject.games[position].desc
+
         holder.binding.btnAchievement.setOnClickListener{
-            val context = holder.itemView.context //??
+            val context = holder.itemView.context
             val intent = Intent(context, AchievementActivity::class.java)
 
             // mindah data ke achievement activity

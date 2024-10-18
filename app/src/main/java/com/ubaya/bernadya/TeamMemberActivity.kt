@@ -20,6 +20,7 @@ class TeamMemberActivity : AppCompatActivity() {
     private lateinit var  binding: ActivityTeamMemberBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
 
         binding = ActivityTeamMemberBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -33,12 +34,12 @@ class TeamMemberActivity : AppCompatActivity() {
         val members = intent.getParcelableArrayListExtra<MemberClass>("member")?: ArrayList()
         binding.recMember.adapter = MemberAdapter(members)
         val teamName = intent.getStringExtra("team")?: ""
-        val gambarGame = intent.getStringExtra("gambarTeam")?:""
+        val gambarTeam = intent.getStringExtra("gambarTeam")?:""
         val builder = Picasso.Builder(this)
         builder.listener { picasso, uri, exception ->
             exception.printStackTrace()
         }
-        builder.build().load(gambarGame).into(binding.imgGame3)
+        builder.build().load(gambarTeam).into(binding.imgGame3)
 
         var gamesmember = "$teamName's team"
         binding.txtNameTeam.setText(gamesmember)

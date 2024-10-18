@@ -29,7 +29,6 @@ class AchievementActivity : AppCompatActivity() {
 
         val items = arrayOf("ALL", "2024", "2023", "2022", "2021")
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
-
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.cbYear.adapter = adapter
 

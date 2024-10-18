@@ -16,16 +16,12 @@ class OurScheduleDetailActivity : AppCompatActivity() {
 
         binding = ActivityScheduleDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        var isButtonClicked=true
 
         binding.btnhome.setOnClickListener{
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
-
-//        intent.putExtra("event", ScheduleObject.schedule[position].event)
-//        intent.putExtra("team", ScheduleObject.schedule[position].teamGame)
-//        intent.putExtra("lokasi", ScheduleObject.schedule[position].location)
-//        intent.putExtra("desc", GameObject.games[position].desc)
 
         //ambil data
         val eventName = intent.getStringExtra("event")?: ""
@@ -43,7 +39,10 @@ class OurScheduleDetailActivity : AppCompatActivity() {
         binding.imgArena.setImageResource(gambarArena)
 
         binding.btnNotif.setOnClickListener {
-            Toast.makeText(this, "Notification created", Toast.LENGTH_SHORT).show()
+            if (isButtonClicked) {
+                isButtonClicked = false
+                Toast.makeText(this, "Notification created", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }

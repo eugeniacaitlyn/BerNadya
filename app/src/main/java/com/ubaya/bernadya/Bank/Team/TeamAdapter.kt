@@ -56,5 +56,4 @@ class TeamAdapter(private val teams: ArrayList<TeamClass>) : RecyclerView.Adapte
         }
     }
 
-
 }
