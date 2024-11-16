@@ -4,17 +4,15 @@ import android.os.Parcel
 import android.os.Parcelable
 
 data class TeamClass(val namaTeam: String,
-                     val memberList: List<MemberClass>, val imgTeam: String): Parcelable {
+                     val namaMember: List<MemberClass>): Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString() ?: "",
-        parcel.createTypedArrayList(MemberClass) ?: listOf(),
-        parcel.readString() ?: ""
+        parcel.createTypedArrayList(MemberClass) ?: listOf()
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(namaTeam)
-        parcel.writeTypedList(memberList)
-        parcel.writeString(imgTeam)
+        parcel.writeTypedList(namaMember)
     }
 
     override fun describeContents(): Int {

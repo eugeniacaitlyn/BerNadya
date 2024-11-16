@@ -8,8 +8,7 @@ class ScheduleClass (val id: Int,
                      val event: String,
                      val date: Date,
                      val location : String,
-                     val gambarArena: Int,
                      val desc: String,
                      var gameClass: GameClass,
-                     var teamGame: TeamClass,
+                     var teamGame: TeamClass
 )

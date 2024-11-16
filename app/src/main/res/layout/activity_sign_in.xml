@@ -58,7 +58,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
             <EditText
-                android:id="@+id/usernameTxt"
+                android:id="@+id/firstNameTxt"
                 style="@style/Widget.AppCompat.AutoCompleteTextView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/lastNameTxt"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -85,7 +85,7 @@
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/usernameTxt" />
+                app:layout_constraintTop_toBottomOf="@+id/firstNameTxt" />
 
             <Button
                 android:id="@+id/btnSubmit"
@@ -100,7 +100,7 @@
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+                app:layout_constraintTop_toBottomOf="@+id/lastNameTxt" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -121,7 +121,7 @@
                     android:text="Don't have account?" />
 
                 <Button
-                    android:id="@+id/btnSignUp"
+                    android:id="@+id/btnSignIn"
                     style="@style/Widget.AppCompat.Button.Borderless"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
